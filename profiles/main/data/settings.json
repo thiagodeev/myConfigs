@@ -1,0 +1,83 @@
+{
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": true,
+    "editor.foldingStrategy": "indentation",
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "always"
+    },
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.minimap.autohide": true,
+    "explorer.confirmDragAndDrop": false,
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "html",
+        "twig": "html"
+    },
+    "explorer.confirmDelete": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "html"
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.ignoreFiles": [
+        ".vscode/**",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.ts",
+        "node_modules/**",
+        "tailwind.css"
+    ],
+    "hardhat.telemetry": false,
+    "workbench.startupEditor": "none",
+    "css.lint.unknownAtRules": "ignore",
+    "[prisma]": {
+        "editor.formatOnSave": true
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "tabnine.experimentalAutoImports": true,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "vsicons.dontShowNewVersionMessage": true,
+    "ibm-blockchain-platform.v2.fabric.runtime": {
+        "1 Org Local Fabric": 8080
+    },
+    "remote.SSH.remotePlatform": {
+        "192.168.0.106": "linux"
+    },
+    "javascript.preferences.importModuleSpecifierEnding": "index",
+    "typescript.preferences.importModuleSpecifierEnding": "index",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "solidity.telemetry": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.autofetch": true,
+    "[solidity]": {},
+    "svelte.enable-ts-plugin": true,
+    "go.toolsManagement.autoUpdate": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "gopls": {
+        "ui.semanticTokens": true
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "cairo1.enableScarb": true,
+    "cairo1.enableLanguageServer": true,
+    "makefile.configureOnOpen": false,
+    "workbench.colorTheme": "Default Dark Modern",
+    "[markdown]": {
+        "diffEditor.ignoreTrimWhitespace": true
+    },
+    "inline-bookmarks.default.words.purple": "@audit\\-issue[\\s], @tag\\-.+[\\s]",
+}

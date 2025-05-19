@@ -1,0 +1,36 @@
+disabled:
+  - id: tintinweb.vscode-solidity-language
+    uuid: cdb58849-c6ad-4416-8d76-6c65d9a8b287
+enabled:
+  - id: eamodio.gitlens
+    uuid: 4de763bd-505d-4978-9575-2b7696ecf94e
+  - id: esbenp.prettier-vscode
+    uuid: 96fa4707-6983-4489-b7c5-d5ffdfdcce90
+  - id: golang.go
+    uuid: d6f6cfea-4b6f-41f4-b571-6ad2ab7918da
+  - id: hbenl.vscode-mocha-test-adapter
+    uuid: 16c44458-f8a5-434f-9d65-b658dea51b0f
+  - id: hbenl.vscode-test-explorer
+    uuid: ff96f1b4-a4b8-45ef-8ecf-c232c0cb75c8
+  - id: IronGeek.vscode-env
+    uuid: 2fd1d28f-fc2a-4582-8788-2f01febe43a6
+  - id: ms-azuretools.vscode-docker
+    uuid: 0479fc1c-3d67-49f9-b087-fb9069afe48f
+  - id: ms-vscode.makefile-tools
+    uuid: e09cf600-90a1-414e-92a0-031f1a5391c6
+  - id: ms-vscode.test-adapter-converter
+    uuid: 47210ec2-0324-4cbb-9523-9dff02a5f9ec
+  - id: NomicFoundation.hardhat-solidity
+    uuid: dada159b-1dfe-49fc-a369-0e08ecdff9b3
+  - id: Starkware.cairo
+    uuid: null
+  - id: StarkWare.cairo1
+    uuid: 50f16400-7b14-4413-a875-6c82ec5805be
+  - id: tamasfe.even-better-toml
+    uuid: b2215d5f-675e-4a2b-b6ac-1ca737518b78
+  - id: tintinweb.vscode-inline-bookmarks
+    uuid: 160aa39f-c929-462e-a537-812f5d3ea2d0
+  - id: vscode-icons-team.vscode-icons
+    uuid: 9ccc1dd7-7ec4-4a46-bd4f-7d7b8b9d322a
+  - id: zokugun.cron-tasks
+    uuid: b7bbbbd5-7a39-4312-87aa-ef6a41de67fb
