@@ -1,3 +1,6 @@
+builtin:
+  disabled:
+    - undefined.cursor-themes
 disabled:
   - id: tintinweb.vscode-solidity-language
     uuid: cdb58849-c6ad-4416-8d76-6c65d9a8b287
@@ -29,7 +32,7 @@ enabled:
   - id: SanjulaGanepola.github-local-actions
     uuid: 4a2d7bb5-c18c-468d-8090-606f0568d535
   - id: Starkware.cairo
-    uuid: null
+    uuid: 9c6c2eba-05ff-4778-821f-9ff6e59b11c0
   - id: StarkWare.cairo1
     uuid: 50f16400-7b14-4413-a875-6c82ec5805be
   - id: tamasfe.even-better-toml
