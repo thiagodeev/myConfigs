@@ -79,5 +79,6 @@
     "[markdown]": {
         "diffEditor.ignoreTrimWhitespace": true
     },
-    "inline-bookmarks.default.words.purple": "@audit\\-issue[\\s], @tag\\-[.+\\s]",
+    "inline-bookmarks.default.words.purple": "@audit\\-issue[\\s], @tag\\-.+[\\s]",
+    "git.openRepositoryInParentFolders": "never",
 }
