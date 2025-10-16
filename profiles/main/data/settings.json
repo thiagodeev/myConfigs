@@ -105,6 +105,23 @@
         "fmt",
         "--stdin"
     ],
+    "go.editorContextMenuCommands": {
+        "toggleTestFile": false,
+        "addTags": false,
+        "removeTags": false,
+        "fillStruct": true,
+        "testAtCursor": false,
+        "testFile": false,
+        "testPackage": false,
+        "generateTestForFunction": true,
+        "generateTestForFile": false,
+        "generateTestForPackage": false,
+        "addImport": false,
+        "testCoverage": true,
+        "playground": true,
+        "debugTestAtCursor": false,
+        "benchmarkAtCursor": false,
+    },
     "githubPullRequests.fileListLayout": "tree",
     "gitlens.ai.model": "gitkraken",
     "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash"
