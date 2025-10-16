@@ -56,14 +56,12 @@
     "typescript.preferences.importModuleSpecifierEnding": "index",
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.enableMultiLinePasteWarning": "never",
-    "solidity.telemetry": true,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    // "[javascript]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
     "git.autofetch": true,
     "[solidity]": {},
     "svelte.enable-ts-plugin": true,
-    "go.toolsManagement.autoUpdate": true,
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -81,4 +79,33 @@
     },
     "inline-bookmarks.default.words.purple": "@audit\\-issue[\\s], @tag\\-.+[\\s]",
     "git.openRepositoryInParentFolders": "never",
+    "cursor.cpp.disabledLanguages": [
+        "plaintext"
+    ],
+    "git.enableSmartCommit": true,
+    "githubPullRequests.pullBranch": "never",
+    "cursor.cpp.enablePartialAccepts": true,
+    "gitlens.rebaseEditor.ordering": "asc",
+    "workbench.activityBar.orientation": "vertical",
+    
+    // Golang
+    "go.testTimeout": "40s",
+    "go.toolsManagement.autoUpdate": true,
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--path-mode=abs",
+        "--allow-parallel-runners",
+        "--fix"
+        ],
+    "go.formatTool": "custom",
+    "go.alternateTools": {
+        "customFormatter": "golangci-lint"
+    },
+    "go.formatFlags": [
+        "fmt",
+        "--stdin"
+    ],
+    "githubPullRequests.fileListLayout": "tree",
+    "gitlens.ai.model": "gitkraken",
+    "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash"
 }
