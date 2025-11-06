@@ -1,8 +1,14 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
+  // ***** START Ctrl + Alt + Arrow
+  //
+  // This one is more complicated, it needs external actions. Ref:
+  // https://stackoverflow.com/questions/33636531/some-vscode-keybindings-not-working-in-ubuntu
+  //
+  // removes/change the default shortcut by the system
   {
-    "key": "ctrl+alt+numpad2",
-    "command": "editor.action.copyLinesDownAction",
+    "key": "ctrl+shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
@@ -11,34 +17,22 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+pageup",
-    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
-    "when": "!activeEditorGroupEmpty"
+    "key": "ctrl+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
+    "key": "ctrl+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // ***** END Ctrl + Alt + Arrow
+
+  // ***** START Ctrl + Tab
+  // removes/change the default shortcut by the system
+  { 
     "key": "ctrl+tab",
     "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
-    "when": "!activeEditorGroupEmpty"
-  },
-  {
-    "key": "ctrl+tab",
-    "command": "workbench.action.nextEditor"
-  },
-  {
-    "key": "ctrl+pagedown",
-    "command": "-workbench.action.nextEditor"
-  },
-  {
-    "key": "ctrl+shift+tab",
-    "command": "workbench.action.previousEditor"
-  },
-  {
-    "key": "ctrl+pageup",
-    "command": "-workbench.action.previousEditor"
-  },
-  {
-    "key": "ctrl+pagedown",
-    "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
     "when": "!activeEditorGroupEmpty"
   },
   {
@@ -47,35 +41,64 @@
     "when": "!activeEditorGroupEmpty"
   },
   {
-    "key": "ctrl+c",
-    "command": "workbench.action.terminal.copySelection",
-    "when": "terminalFocus"
-},
-{
-    "key": "ctrl+v",
-    "command": "workbench.action.terminal.paste",
-    "when": "terminalFocus"
-},
-{
+    "key": "ctrl+pagedown",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+    "when": "!activeEditorGroupEmpty"
+  },
+  // set ctrl+tab
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  },
+  // ***** END Ctrl + Tab
+
+  // ***** START Ctrl + C
+  // removes/change the default shortcut by the system
+  {
+    "key": "ctrl+shift+c",
+    "command": "-workbench.action.terminal.copySelection",
+    "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
+  },
+  {
     "key": "ctrl+shift+c",
     "command": "workbench.action.terminal.sendSequence",
     "args": {
       "text": "\u0003"
     },
     "when": "terminalFocus"
-},
-{
-    "key": "ctrl+k",
-    "command": "windsurf.prioritized.command.open"
-},
-{
-  "key": "ctrl+alt+numpad8",
-  "command": "editor.action.copyLinesUpAction",
-  "when": "editorTextFocus && !editorReadonly"
-},
-{
-  "key": "ctrl+shift+alt+up",
-  "command": "-editor.action.copyLinesUpAction",
-  "when": "editorTextFocus && !editorReadonly"
-}
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-workbench.action.terminal.paste",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  // set ctrl + c
+  {
+    "key": "ctrl+c",
+    "command": "workbench.action.terminal.copySelection",
+    "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "workbench.action.terminal.paste",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  // ***** END Ctrl + C
 ]

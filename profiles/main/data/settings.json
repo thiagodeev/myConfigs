@@ -69,7 +69,7 @@
     "gopls": {
         "ui.semanticTokens": true
     },
-    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": true,
     "cairo1.enableScarb": true,
     "cairo1.enableLanguageServer": true,
     "makefile.configureOnOpen": false,
@@ -91,20 +91,24 @@
     // Golang
     "go.testTimeout": "40s",
     "go.toolsManagement.autoUpdate": true,
+
+    // linter
     "go.lintTool": "golangci-lint",
     "go.lintFlags": [
         "--path-mode=abs",
         "--allow-parallel-runners",
         "--fix"
         ],
-    "go.formatTool": "custom",
-    "go.alternateTools": {
-        "customFormatter": "golangci-lint"
-    },
-    "go.formatFlags": [
-        "fmt",
-        "--stdin"
-    ],
+    // "go.formatTool": "custom",
+    // "go.alternateTools": {
+    //     "customFormatter": "golangci-lint"
+    // },
+    // "go.formatFlags": [
+    //     "fmt",
+    //     "--stdin"
+    // ],
+    //
+    
     "go.editorContextMenuCommands": {
         "toggleTestFile": false,
         "addTags": false,
@@ -124,5 +128,6 @@
     },
     "githubPullRequests.fileListLayout": "tree",
     "gitlens.ai.model": "gitkraken",
-    "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash"
+    "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
+    "editor.largeFileOptimizations": false
 }
