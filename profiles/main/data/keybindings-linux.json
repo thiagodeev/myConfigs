@@ -78,6 +78,16 @@
   },
   {
     "key": "ctrl+shift+c",
+    "command": "-workbench.action.terminal.copySelection",
+    "when": "-!terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+c",
     "command": "workbench.action.terminal.sendSequence",
     "args": {
       "text": "\u0003"
@@ -99,6 +109,14 @@
     "key": "ctrl+v",
     "command": "workbench.action.terminal.paste",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-  },
-  // ***** END Ctrl + C
+    // ***** END Ctrl + C
+},
+{
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "\u001b\r"
+    },
+    "when": "terminalFocus"
+}
 ]

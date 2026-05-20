@@ -1,5 +1,12 @@
 builtin:
   disabled:
+    - anysphere.cursor-agent-exec
+    - anysphere.cursor-agent-worker
+    - anysphere.cursor-always-local
+    - anysphere.cursor-checkout
+    - anysphere.cursor-resolver
+    - anysphere.cursor-retrieval
+    - anysphere.cursor-socket
     - undefined.cursor-themes
 disabled:
   - id: esbenp.prettier-vscode
@@ -9,6 +16,8 @@ disabled:
   - id: tintinweb.vscode-solidity-language
     uuid: cdb58849-c6ad-4416-8d76-6c65d9a8b287
 enabled:
+  - id: Anthropic.claude-code
+    uuid: 3c13ae49-babe-45fe-8c48-5e45077a62bf
   - id: anysphere.cursorpyright
     uuid: d7f9f831-2239-4783-9d06-18d27f285818
   - id: eamodio.gitlens

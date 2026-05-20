@@ -69,7 +69,7 @@
     "gopls": {
         "ui.semanticTokens": true
     },
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "cairo1.enableScarb": true,
     "cairo1.enableLanguageServer": true,
     "makefile.configureOnOpen": false,
@@ -77,7 +77,6 @@
     "[markdown]": {
         "diffEditor.ignoreTrimWhitespace": true
     },
-    "inline-bookmarks.default.words.purple": "@audit\\-issue[\\s], @tag\\-.+[\\s]",
     "git.openRepositoryInParentFolders": "never",
     "cursor.cpp.disabledLanguages": [
         "plaintext"
@@ -93,12 +92,12 @@
     "go.toolsManagement.autoUpdate": true,
 
     // linter
-    "go.lintTool": "golangci-lint",
-    "go.lintFlags": [
-        "--path-mode=abs",
-        "--allow-parallel-runners",
-        "--fix"
-        ],
+    // "go.lintTool": "golangci-lint",
+    // "go.lintFlags": [
+    //     "--path-mode=abs",
+    //     "--allow-parallel-runners",
+    //     "--fix"
+    //     ],
     // "go.formatTool": "custom",
     // "go.alternateTools": {
     //     "customFormatter": "golangci-lint"
@@ -112,22 +111,58 @@
     "go.editorContextMenuCommands": {
         "toggleTestFile": false,
         "addTags": false,
+        "compilerDetails": true,
         "removeTags": false,
         "fillStruct": true,
         "testAtCursor": false,
         "testFile": false,
         "testPackage": false,
-        "generateTestForFunction": true,
+        "generateTestForFunction": false,
         "generateTestForFile": false,
         "generateTestForPackage": false,
         "addImport": false,
-        "testCoverage": true,
-        "playground": true,
+        "testCoverage": false,
+        "playground": false,
         "debugTestAtCursor": false,
         "benchmarkAtCursor": false,
     },
     "githubPullRequests.fileListLayout": "tree",
     "gitlens.ai.model": "gitkraken",
     "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
-    "editor.largeFileOptimizations": false
+    "editor.largeFileOptimizations": false,
+    "gitlens.views.scm.grouped.views": {
+        "commits": true,
+        "branches": true,
+        "remotes": true,
+        "stashes": true,
+        "tags": true,
+        "worktrees": true,
+        "contributors": true,
+        "fileHistory": false,
+        "repositories": true,
+        "searchAndCompare": false,
+        "launchpad": false
+    },
+    "go.diagnostic.vulncheck": "Off",
+
+    "inline-bookmarks.default.words.purple": "@audit\\-issue[\\s], @tag\\-.+[\\s], @new[\\s], @changed[\\s], @removed[\\s]",
+    "git.replaceTagsWhenPull": true,
+    "claudeCode.preferredLocation": "panel",
+    "gitlens.views.commitDetails.files.compact": true,
+    "gitlens.views.commitDetails.files.icon": "type",
+    "gitlens.views.commitDetails.files.layout": "tree",
+    "gitlens.views.commitDetails.files.threshold": 5,
+    "window.autoDetectColorScheme": false,
+    "extensions.autoUpdate": false,
+
+    // For Juno
+    // "go.toolsEnvVars": {
+    //     "CGO_LDFLAGS": "-ldl -lm"
+    // },
+
+    // Default values:
+    // "inline-bookmarks.default.words.blue": "@audit\\-info[\\s], @note[\\s], @remind[\\s], @follow-up[\\s]",
+    // "inline-bookmarks.default.words.green": "@audit\\-ok[\\s]",
+    // "inline-bookmarks.default.words.purple": "@audit\\-issue[\\s], @tag\\-.+[\\s]",
+    // "inline-bookmarks.default.words.red": "@audit[\\s], @todo[\\s]",
 }
